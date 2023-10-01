@@ -1,0 +1,46 @@
+structure
+│  run.py  程序入口
+│  train_eval.py  模型训练和测试的函数
+│  utils.py  数据处理的函数
+│
+├─models
+│  │  bert.py
+│  │
+│  └─__pycache__  缓存文件
+│          CNN.cpython-36.pyc
+│          RNN.cpython-36.pyc
+│
+├─Dataset
+│  ├─data
+│  │      class.txt  类别名称
+|  |       test.news.csv  训练集
+|  |       train.news.csv  测试集
+│  │
+│  │
+│  │
+│  └─saved_dict  模型训练结果
+│          model.ckpt
+│          bert.ckpt
+│
+│
+├─bert_pretrain  bert参数、模型本身、词表
+│        bert_config.json
+│        pytorch_model.bin
+│        vocab.txt
+│
+│
+├─ERNIE_pretrain
+│        bert_config.json
+│        pytorch_model.bin
+│        vocab.txt
+│
+│
+│
+├─pytorch_pretrained
+│        ......（一堆.py）
+│
+│
+└─__pycache__  缓存文件
+        train_eval.cpython-36.pyc
+        utils.cpython-36.pyc
+

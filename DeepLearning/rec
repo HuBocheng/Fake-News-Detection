@@ -1,0 +1,35 @@
+structure
+│  run.py  程序入口
+│  train_eval.py  模型训练和测试的函数
+│  utils.py  数据处理的函数
+│
+├─models
+│  │  CNN.py  CNN模型类、Config设置类的定义
+│  │  RNN.py  CNN模型类、Config设置类的定义
+│  │
+│  └─__pycache__  缓存文件
+│          CNN.cpython-36.pyc
+│          RNN.cpython-36.pyc
+│
+├─Dataset
+│  ├─data
+│  │      class.txt  类别名称
+|  |      test.news.csv  训练集
+|  |      train.news.csv  测试集
+│  │      embedding_SougouNews_plus.npz  从词向量库中筛选出来的本项目需要用到的向量
+│  │      sgns.sogounews.bigram-char  github上项目Chinese Word Vectors 中文词向量，下载的经过预训练的词向量库
+│  │      vocab.pkl  词表
+│  │      stop_words.txt  停用词表
+│  │
+│  ├─log
+│  │
+│  │
+│  └─saved_dict  模型训练结果
+│          model.ckpt
+│          CNN.ckpt
+│          RNN.ckpt
+│
+└─__pycache__  缓存文件
+        train_eval.cpython-36.pyc
+        utils.cpython-36.pyc
+
